@@ -85,7 +85,7 @@ class Hangman:
 # %%
         while(True):
             letter = input("please type a character to guess the word");
-            if(len(letter) != 1):
+            if(len(letter) != 1 & letter.isalpha() ):
                 letter = input("Please, enter just one character")
             else:
                 print("valid letter")
