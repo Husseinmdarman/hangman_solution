@@ -42,7 +42,7 @@ class Hangman:
         Asks the user for a letter.
     '''
 
-    list_letter = [list]
+   
 
     def __init__(self, word_list, num_lives=5):
         # TODO 2: Initialize the attributes as indicated in the docstring
@@ -81,7 +81,7 @@ class Hangman:
         # TODO 1: Assign the letter to a variable called `letter`
         # TODO 1: The letter has to comply with the following criteria: It has to be a single character. If it is not, print "Please, enter just one character"
         # TODO 2. It has to be a letter that has not been tried yet. Use the list_letters attribute to check this. If it has been tried, print "{letter} was already tried".
-        # TODO 3: If the letter is valid, call the check_letter method
+       # TODO 3: If the letter is valid, call the check_letter method
 # %%
         while(True):
             letter = input("please type a character to guess the word");
