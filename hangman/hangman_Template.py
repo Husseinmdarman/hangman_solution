@@ -3,6 +3,7 @@ Make sure you complete all the TODOs in this file.
 The prints have to contain the same text as indicated, don't add any more prints,
 or you will get 0 for this assignment.
 '''
+# %%
 import random
 
 class Hangman:
@@ -43,14 +44,25 @@ class Hangman:
     '''
 
    
-
+# %%
     def __init__(self, word_list, num_lives=5):
         # TODO 2: Initialize the attributes as indicated in the docstring
         # TODO 2: Print two message upon initialization:
         # 1. "The mystery word has {len(self.word)} characters" (The number of letters is NOT the UNIQUE number of letters)
         # 2. {word_guessed}
-        pass
+        
+        self.word_list = word_list
+        self.num_lives = 5
+        self.list_letters = []
+        self.word = random.choice(word_list)
+        self.num_letters = len(set(self.word))
+        self.word_guessed = ["_"] * len((self.word))
 
+        print(f"The mystery word has {len(self.word)} characters (The number of letters is NOT the UNIQUE number of letters)")
+        print(self.word_guessed)
+        
+        pass
+# %%
     def check_letter(self, letter) -> None:
         '''
         Checks if the letter is in the word.
